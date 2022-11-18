@@ -1,0 +1,20 @@
+dependencies:
+  -aave/protocol-V2@1.0.1
+  compiler:
+   solc:
+   remappings:
+    - '@aave=aave/protocol-V2@1.0.1'
+  networks:
+  default: mainnet-fork
+  kovan:
+  weth_token: 'ox'
+  lendingpooladdressesprovider: 'ox'
+  dai_eth_price_feed: 'ox'
+  dai_token : 'ox'
+  mainnet-fork:
+   weth_token: 'ox'
+   lendingpooladdressesprovider: 'ox'
+   dai_eth_price_feed: 'ox'
+   dai_token: 'ox'
+wallets:
+ from_key: ${PRIVATE_KEY}
